@@ -295,6 +295,8 @@
                 "ANDROID_ABI": "arm64-v8a",
                 "ANDROID_PLATFORM": "android-29",
                 "ANDROID_STL": "c++_shared",
+                "CMAKE_SHARED_LINKER_FLAGS": "-Wl,-z,max-page-size=16384 -Wl,-z,common-page-size=16384",
+                "CMAKE_EXE_LINKER_FLAGS": "-Wl,-z,max-page-size=16384 -Wl,-z,common-page-size=16384",
                 "SAGE_USE_DX8": "OFF",
                 "SAGE_USE_SDL3": "ON",
                 "SAGE_USE_OPENAL": "ON",
